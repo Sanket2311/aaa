@@ -1,15 +1,15 @@
 from flask import Flask, render_template, url_for, redirect,request, flash
 from flask_sqlalchemy import SQLAlchemy
 
-import os
+# import os
 
 app = Flask(__name__)
 app.secret_key = "Secret key"
  
-DB_CONN="mysql+pymysql://n1kgmt4q3oqm5vd8:yzay4mron21zi4np@u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g6k28qe8qz4sd3us"
+
 
 #SqlAlchemy Database Configuration With Mysql
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DB_CONN")
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://n1kgmt4q3oqm5vd8:yzay4mron21zi4np@u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g6k28qe8qz4sd3us"
 #"mysql://root:''@localhost/crud"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
  
