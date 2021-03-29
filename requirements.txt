@@ -1,0 +1,10 @@
+click
+Flask
+Flask-SQLAlchemy
+itsdangerous
+Jinja2
+MarkupSafe
+oauthlib
+SQLAlchemy
+Werkzeug
+gunicorn
